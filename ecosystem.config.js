@@ -24,6 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'https://github.com/Bihil/NodeJSAWS.git',
       path : '/home/ubuntu/NodeJS',
+      'post-deploy': 'bash post-deploy.sh',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
   }
       }
